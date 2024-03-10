@@ -1,0 +1,62 @@
+section {
+  max-width: 40rem;
+  margin: 3rem auto;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkup-item {
+  margin: 1rem 0;
+  background-color: #350490;
+  padding: 2rem;
+  color: white;
+  border-radius: 4px;
+}
+
+.linkup-summary {
+  display: flex;
+  align-items: flex-start;
+}
+
+.linkup-image {
+  margin-right: 2rem;
+}
+
+.linkup-image img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.linkup-details h3 {
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.linkup-details address {
+  font-style: italic;
+}
+
+.linkup-actions {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.linkup-actions .btn {
+  background-color: #cb82fb;
+  border-color: #cb82fb;
+  color: #350490;
+  padding: 0.75rem 2rem;
+}
+
+.linkup-actions .btn:hover {
+  background-color: #ba82fb;
+  border-color: #ba82fb;
+}

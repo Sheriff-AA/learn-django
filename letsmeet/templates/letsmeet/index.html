@@ -1,0 +1,30 @@
+{% extends 'letsmeet/base/base.html' %} 
+
+{% load static %} 
+
+{% block page_title %}
+All LinkUps Set
+{% endblock %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static 'letsmeet/styles/linkups.css' %}" />
+{%endblock%}
+
+{% block main_heading %}
+Great get togethers coming up!
+{% endblock %}
+
+{% block header_content %}
+<p>Find the one that best suits your needs!</p>
+{% endblock %} 
+
+{% block body %}
+<section>
+  <h2>Upcoming LinkUps</h2>
+  <ol>
+    {% for linkup_item in link_ups %}
+    {% include 'letsmeet/includes/linkup-item.html' with title=linkup_item.title location=linkup_item.location slug=linkup_item.slug image=linkup_item.image.url %}
+    {% endfor %}
+  </ol>
+</section>
+{% endblock %}
